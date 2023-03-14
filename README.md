@@ -5,9 +5,9 @@
 ```bash
 ./executer.sh
 ```
-
+SI TOUT VA BIEN LA VACHE DIT CA
 == Dépendances du Projet
-ENCORE UN CHANGEMENT !!
+
 - Spring boot et tous les machins qui vont avec
   - spring-boot-starter-data-jpa
   - spring-boot-starter-web
