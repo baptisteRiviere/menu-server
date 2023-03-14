@@ -6,9 +6,13 @@ jobs:
     runs-on: ubuntu-22.04
     container: docker/whalesay:latest
     steps:
-      - name: Check out repository code
-        uses: actions/checkout@v3
-      #- run: sudo apt-get update 
-      #- run: sudo apt-get install cowsay -y 
-      - run: ls -l # Liste les fichier du répertoire courant
-      - run: cat README.md | cowsay
+      - name: catREADME
+        id: catREADME
+        run: cat README.md
+      - name: cowsay
+        uses: Code-Hex/neo-cowsay-action@v1
+        with:
+          message: | # Support multi-lines
+            "${{ steps.catREADME.outputs.content }}"
+      
+
