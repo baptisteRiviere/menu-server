@@ -7,7 +7,7 @@
 ```
 
 == Dépendances du Projet
-OH LE CHANGEMENT
+ENCORE UN CHANGEMENT !!
 - Spring boot et tous les machins qui vont avec
   - spring-boot-starter-data-jpa
   - spring-boot-starter-web
