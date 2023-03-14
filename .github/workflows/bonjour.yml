@@ -7,9 +7,10 @@ jobs:
     container: docker/whalesay:latest
     steps:
       - uses: actions/checkout@v3
-      - name: catREADME
+      - uses: juliangruber/read-file-action@v1
         id: catREADME
-        run: cat README.md
+        with:
+          path: README.md
       - name: cowsay
         uses: Code-Hex/neo-cowsay-action@v1
         with:
